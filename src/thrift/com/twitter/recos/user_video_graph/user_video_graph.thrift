@@ -9,7 +9,7 @@ include "com/twitter/recos/recos_common.thrift"
 
 
 struct TweetBasedRelatedTweetRequest {
-  1: required i64                                   tweetId               // query tweet id
+  1: required i63                                   tweetId               // query tweet id
   2: optional i32                                   maxResults            // number of suggested results to return
   3: optional list<i64>                             excludeTweetIds       // list of tweet ids to exclude from response
   4: optional i32                                   minQueryDegree        // min degree of query tweet
